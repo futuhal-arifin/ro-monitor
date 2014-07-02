@@ -5,7 +5,7 @@
 //ribbon breadcrumbs config
 //array("Display Name" => "URL");
 $breadcrumbs = array(
-	"Home" => APP_URL
+	"Home" => FUNC
 );
 
 /*navigation array config
@@ -24,29 +24,29 @@ ex:
 $page_nav = array(
 	"dashboard" => array(
 		"title" => "Dashboard",
-		"url" => APP_URL,
+		"url" => FUNC,
 		"icon" => "fa-home"
 	),
-	"inbox" => array(
+	"ro_req" => array(
 		"title" => "RO Request",
-		"url" => APP_URL."/inbox.php",
+		"url" => FUNC."/roreq",
 		"icon" => "fa-pencil-square-o"
 	),
-	"graphs" => array(
+	"improvement" => array(
 		"title" => "Improvement",
 		"icon" => "fa-bar-chart-o",
 		"sub" => array(
 			"flot" => array(
 				"title" => "Facility Request",
-				"url" => APP_URL."/flot.php"
+				"url" => FUNC."/facilityreq"
 			),
 			"morris" => array(
 				"title" => "General Request",
-				"url" => APP_URL."/morris.php"
+				"url" => FUNC."/generalreq"
 			)
 		)
 	),
-	"tables" => array(
+	"inventory" => array(
 		"title" => "Inventory",
 		"icon" => "fa-table",
 	)
