@@ -22,33 +22,24 @@ ex:
 
 */
 $page_nav = array(
-	"dashboard" => array(
-		"title" => "Dashboard",
-		"url" => FUNC,
-		"icon" => "fa-home"
-	),
-	"ro_req" => array(
+	"rorequest" => array(
 		"title" => "RO Request",
 		"url" => FUNC."/roreq",
 		"icon" => "fa-pencil-square-o"
 	),
-	"improvement" => array(
-		"title" => "Improvement",
+	"imrequest" => array(
+		"title" => "Improvement Facilities",
 		"icon" => "fa-bar-chart-o",
-		"sub" => array(
-			"flot" => array(
-				"title" => "Facility Request",
-				"url" => FUNC."/facilityreq"
-			),
-			"morris" => array(
-				"title" => "General Request",
-				"url" => FUNC."/generalreq"
-			)
-		)
+		"url" => FUNC."/imreq"
 	),
-	"inventory" => array(
-		"title" => "Inventory",
-		"icon" => "fa-table",
+	"invrequest" => array(
+		"title" => "Inventory Request",
+		"url" => FUNC."/invreq",
+		"icon" => "fa-table"
+	),
+	"logout" => array(
+		"title" => "Log out",
+		"url" => FUNC."/logout",
 	)
 	// "forms" => array(
 	// 	"title" => "Forms",

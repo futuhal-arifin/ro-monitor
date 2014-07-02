@@ -1,6 +1,10 @@
 		<!-- Left panel : Navigation area -->
 		<!-- Note: This width of the aside area can be adjusted through LESS variables -->
 		<aside id="left-panel">
+			<?php 
+				echo $sid; 
+				die();
+			?>
 
 			<!-- User info -->
 			<div class="login-info">
