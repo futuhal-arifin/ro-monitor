@@ -24,33 +24,35 @@ class Main extends CI_Controller {
 	public function login() {
 		session_start();
 
-		$_SESSION['email'] = $_GET['email'];
-		$_SESSION['password'] = $_GET['password'];
+		$email = $_GET['email'];
+		$password = $_GET['password'];
 
-		$email = $_SESSION['email'];
-		$password = $_SESSION['password'];
-
-		if ($email == "user1@gmail.com")
-			$_SESSION['sid'] = 1;
-		else if ($email == "user2@gmail.com")
-			$_SESSION['sid'] = 2;
-		else if ($email == "user3@gmail.com")
-			$_SESSION['sid'] = 3;
-		else if ($email == "user4@gmail.com")
-			$_SESSION['sid'] = 4;
-		else if ($email == "user5@gmail.com")
-			$_SESSION['sid'] = 5;
-
-		$data['sid']	= $_SESSION['sid'];
+		//$email = $_SESSION['email'];
+		//$password = $_SESSION['password'];
+		$sid = 1;
 		
+		if ($email == "sd@gmail.com")
+			$sid = 'sd';
+		else if ($email == "ga@gmail.com")
+			$sid = 'ga';
+		else if ($email == "pu@gmail.com")
+			$sid = 'pu';
+		else if ($email == "ls@gmail.com")
+			$sid= 'ls';
+		else if ($email == "fi@gmail.com")
+			$sid = 'fi';
+
+		$data['sid']	= $sid;
+		$this->load->library('session');
+        $sid = $this->session->set_userdata(array('sid'=>$sid));
 		$this->load->helper('url');
 		redirect('/main/dashboard', $data);
 	}
 
 	public function logout() {
-		session_start();
-		$_SESSION = array();
-		session_destroy();
+		//session_start();
+		//$_SESSION = array();
+		//session_destroy();
 
 		$this->load->helper('url');
 		redirect('/main');
@@ -62,20 +64,27 @@ class Main extends CI_Controller {
 
 	public function roreq($user=null)
 	{
+		$this->load->library('session');
+		$sid = $this->session->userdata('sid');
+		
 		$data['username'] = "fajar";
-		$data['usertype'] = "sd"; // sd, ga, pu, ls, fi
+		$data['usertype'] = $sid;//"sd"; // sd, ga, pu, ls, fi
 		$this->load->view('rorequest', $data);
 	}
 	public function imreq($user=null)
 	{
+		$this->load->library('session');
+		$sid = $this->session->userdata('sid');
 		$data['username'] = "fajar";
-		$data['usertype'] = "ga"; // ga, pu, fi
+		$data['usertype'] = $sid;//"ga"; // ga, pu, fi
 		$this->load->view('imrequest', $data);
 	}
 	public function invreq($user=null)
 	{
+		$this->load->library('session');
+		$sid = $this->session->userdata('sid');
 		$data['username'] = "fajar";
-		$data['usertype'] = "ga"; // ga, pu, fi
+		$data['usertype'] = $sid;//"ga"; // ga, pu, fi
 		$this->load->view('invrequest', $data);
 	}
 }

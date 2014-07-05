@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
 
-		<title> <?php echo $page_title != "" ? $page_title." - " : ""; ?>SmartAdmin </title>
+		<title> <?php echo $page_title != "" ? $page_title." - " : ""; ?>Assets Management </title>
 		<meta name="description" content="">
 		<meta name="author" content="">
 
@@ -100,16 +100,18 @@
 
 						<!-- Note: The activity badge color changes when clicked and resets the number to 0
 						Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
-						<span id="activity" class="activity-dropdown"> <i class="fa fa-user"></i> <b class="badge"> 21 </b> </span>
+						<span id="activity" class="activity-dropdown"> <i class="fa fa-user"></i> <b class="badge"> 7 </b> </span>
 
 						<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
 						<div class="ajax-dropdown">
 
 							<!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->
 							<div class="btn-group btn-group-justified" data-toggle="buttons">
+								<!--
 								<label class="btn btn-default">
 									<input type="radio" name="activity" id="<?php echo APP_URL; ?>/ajax/notify/mail.php">
 									Msgs (14) </label>
+									-->
 								<label class="btn btn-default">
 									<input type="radio" name="activity" id="<?php echo APP_URL; ?>/ajax/notify/notifications.php">
 									notify (3) </label>
