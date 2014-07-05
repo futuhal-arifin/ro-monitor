@@ -34,7 +34,7 @@ include("inc/nav.php");
 	<?php
 		//configure ribbon (breadcrumbs) array("name"=>"url"), leave url empty if no url
 		//$breadcrumbs["New Crumb"] => "http://url.com"
-		//$breadcrumbs["Tables"] = "";
+		$breadcrumbs["Tables"] = "";
 		include("inc/ribbon.php");
 	?>
 

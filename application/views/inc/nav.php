@@ -2,8 +2,8 @@
 		<!-- Note: This width of the aside area can be adjusted through LESS variables -->
 		<aside id="left-panel">
 			<?php 
-				//echo $sid; 
-				//die();
+				echo $sid; 
+				die();
 			?>
 
 			<!-- User info -->

@@ -22,11 +22,6 @@ ex:
 
 */
 $page_nav = array(
-	"dashboard" => array(
-		"title" => "Dashboard",
-		"url" => FUNC."/dashboard",
-		"icon" => "fa-home"
-	),
 	"rorequest" => array(
 		"title" => "RO Request",
 		"url" => FUNC."/roreq",
