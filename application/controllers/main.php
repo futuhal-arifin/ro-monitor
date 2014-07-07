@@ -83,6 +83,17 @@ class Main extends CI_Controller {
 		$data['usertype'] = $sid;//"sd"; // sd, ga, pu, ls, fi
 		$this->load->view('rorequest', $data);
 	}
+
+	public function roaddreq($user=null)
+	{
+		$this->load->library('session');
+		$sid = $this->session->userdata('sid');
+		
+		$data['username'] = "fajar";
+		$data['usertype'] = $sid;//"sd"; // sd, ga, pu, ls, fi
+		$this->load->view('roaddrequest', $data);
+	}
+
 	public function imreq($user=null)
 	{
 		$this->load->library('session');

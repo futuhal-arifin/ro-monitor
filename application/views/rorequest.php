@@ -43,8 +43,9 @@ include("inc/nav.php");
 
 		<div class="row">
 			<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
-				<h1 class="page-title txt-color-blueDark"><i class="fa fa-table fa-fw "></i> Recent RO Request <span>
+				<h1 class="page-title txt-color-blueDark"><i class="fa fa-table fa-fw "></i> Recent RO Request <span>  
 			</div>
+
 			<!--
 			<div class="col-xs-12 col-sm-5 col-md-5 col-lg-8">
 				<ul id="sparks" class="">
@@ -71,11 +72,19 @@ include("inc/nav.php");
 			-->
 		</div>
 
+		
+		<section id="widget-grid" class="">
+			<div class="row">
+				<div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-0" data-widget-editbutton="false">
+					<a href="<?php echo $this->config->base_url() . 'index.php/main/roaddreq' ?>" class="btn btn-primary">Add New Request</a>
+				</div>
+			</div>
+		</section>
 		<!-- widget grid -->
 		<section id="widget-grid" class="">
-
 			<!-- row -->
 			<div class="row">
+
 
 				<!-- NEW WIDGET START -->
 				<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
