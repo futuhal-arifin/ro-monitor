@@ -10,12 +10,12 @@
 			<div class="login-info">
 				<span> <!-- User image size is adjusted inside CSS, it should stay as is --> 
 					
-					<a href="javascript:void(0);" id="show-shortcut" data-action="toggleShortcut">
+					<a href="javascript:void(0);" id="show-shortcut"> <!--data-action="toggleShortcut">-->
 						<img src="<?php echo ASSETS_URL; ?>/img/avatars/fajar.png" alt="me" class="online" /> 
 						<span>
-							fajar.sudarmadi 
+							fajar.sudarmadi
 						</span>
-						<i class="fa fa-angle-down"></i>
+						<!--<i class="fa fa-angle-down"></i>-->
 					</a> 
 					
 				</span>

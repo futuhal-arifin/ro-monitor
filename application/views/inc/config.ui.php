@@ -43,7 +43,7 @@ $page_nav = array(
 		"icon" => "fa-table"
 	),
 	"logout" => array(
-		"title" => "Log out",
+		"title" => "Sign out",
 		"url" => FUNC."/logout",
 	)
 	// "forms" => array(

@@ -31,22 +31,32 @@ class Main extends CI_Controller {
 		//$password = $_SESSION['password'];
 		$sid = 1;
 		
-		if ($email == "sd@gmail.com")
+		if ($email == "sd@gmail.com") {
 			$sid = 'sd';
-		else if ($email == "ga@gmail.com")
+			$role = '- Service Division'; 
+		} else if ($email == "ga@gmail.com") {
 			$sid = 'ga';
-		else if ($email == "pu@gmail.com")
+			$role = '- General Affairs';
+		} else if ($email == "pu@gmail.com") {
 			$sid = 'pu';
-		else if ($email == "ls@gmail.com")
+			$role = '- Purchasing';
+		} else if ($email == "ls@gmail.com") {
 			$sid= 'ls';
-		else if ($email == "fi@gmail.com")
+			$role = '- Legal Specialist';
+		} else if ($email == "fi@gmail.com") {
 			$sid = 'fi';
-
+			$role = '- Finance';
+		} else {
+			$sid = 'ga';
+			$role = '- General Affairs';
+		}
+		
 		$data['sid']	= $sid;
+		$data['role']	= $role;
 		$this->load->library('session');
-        $sid = $this->session->set_userdata(array('sid'=>$sid));
+        $this->session->set_userdata($data);
 		$this->load->helper('url');
-		redirect('/main/dashboard', $data);
+		redirect('/main/dashboard');
 	}
 
 	public function logout() {
@@ -59,7 +69,9 @@ class Main extends CI_Controller {
 	}
 
 	public function dashboard() {
-		$this->load->view('ro_admin');
+		$this->load->library('session');
+        $data['role'] = $this->session->userdata('role');
+		$this->load->view('ro_admin', $data);
 	}
 
 	public function roreq($user=null)

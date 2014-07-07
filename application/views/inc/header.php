@@ -213,7 +213,7 @@
 
 						<!-- logout button -->
 						<div id="logout" class="btn-header transparent pull-right">
-							<span> <a href="<?php echo APP_URL; ?>/login.php" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
+							<span> <a href="<?php echo FUNC; ?>/logout" title="Sign Out" data-action="userLogout" data-logout-msg="Don't forget to check your notification next time"><i class="fa fa-sign-out"></i></a> </span>
 						</div>
 						<!-- end logout button -->
 
@@ -222,8 +222,9 @@
 							<span> <a href="javascript:void(0)" title="Search"><i class="fa fa-search"></i></a> </span>
 						</div>
 						<!-- end search mobile button -->
-
+						
 						<!-- input: search field -->
+						<!--
 						<form action="<?php echo APP_URL; ?>/search.php" class="header-search pull-right">
 							<input type="text" name="param" placeholder="Find reports and more" id="search-fld">
 							<button type="submit">
@@ -231,8 +232,9 @@
 							</button>
 							<a href="javascript:void(0);" id="cancel-search-js" title="Cancel Search"><i class="fa fa-times"></i></a>
 						</form>
+						-->
 						<!-- end input: search field -->
-
+						
 						<!-- fullscreen button -->
 						<div id="fullscreen" class="btn-header transparent pull-right">
 							<span> <a href="javascript:void(0);" title="Full Screen" data-action="launchFullscreen"><i class="fa fa-arrows-alt"></i></a> </span>
@@ -240,6 +242,7 @@
 						<!-- end fullscreen button -->
 
 						<!-- multiple lang dropdown : find all flags in the flags page -->
+						<!--
 						<ul class="header-dropdown-list hidden-xs">
 							<li>
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="<?php echo ASSETS_URL; ?>/img/blank.gif" class="flag flag-us" alt="United States"> <span> US </span> <i class="fa fa-angle-down"></i> </a>
@@ -256,8 +259,9 @@
 								</ul>
 							</li>
 						</ul>
+						-->
 						<!-- end multiple lang -->
-
+						
 					</div>
 					<!-- end pulled right: nav area -->
 

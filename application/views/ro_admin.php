@@ -11,7 +11,7 @@ require_once("inc/config.ui.php");
 YOU CAN SET CONFIGURATION VARIABLES HERE BEFORE IT GOES TO NAV, RIBBON, ETC.
 E.G. $page_title = "Custom Title" */
 
-$page_title = "Dashboard";
+$page_title = "Dashboard ".$role;
 
 /* ---------------- END PHP Custom Scripts ------------- */
 
@@ -73,7 +73,7 @@ include("inc/nav.php");
 						-->
 						<header>
 							<span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
-							<h2>Sesuatu Chart</h2>
+							<h2>Sesuatu Laporan	</h2>
 
 						</header>
 
