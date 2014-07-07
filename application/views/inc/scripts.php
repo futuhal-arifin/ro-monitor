@@ -60,7 +60,7 @@
 		<![endif]-->
 
 		<!-- Demo purpose only -->
-		<script src="<?php echo ASSETS_URL; ?>/js/demo.min.js"></script>
+		<!-- <script src="<?php //echo ASSETS_URL; ?>/js/demo.min.js"></script> -->
 
 		<!-- MAIN APP JS FILE -->
 		<script src="<?php echo ASSETS_URL; ?>/js/app.min.js"></script>		
